@@ -792,8 +792,7 @@ class AboutContent extends StatelessWidget {
               TableRow(
                 children: [
                   Text(lang != 1 ? "open source repo" : "izvorni kod"),
-                  // TODO: ADD GITHUB LINK
-                  Text("pretend a github link is here")
+                  Text("https://github.com/absltnull/necromancer")
                 ]
               ),
               TableRow(
