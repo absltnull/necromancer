@@ -1,0 +1,54 @@
+name: necromancer
+description: "find dead or lost apps with necromancer."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  file_picker: ^10.3.8
+  http: ^1.2.2
+  cached_network_image: ^3.4.1
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.5.4
+  open_filex: ^4.7.0
+  permission_handler: ^12.0.1
+  android_intent_plus: ^6.0.0
+  package_info_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  icons_launcher: ^3.0.3
+  change_app_package_name: ^1.5.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icon/
+    - assets/inapp_icons/
+  
+  fonts:
+    - family: "Anonymous"
+      fonts:
+        - asset: assets/font.ttf
+          weight: 400
+
+icons_launcher:
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/icon/logo.png"
+      adaptive_background: "#ffffff"
+      adaptive_foreground: "assets/foreground.png"
+    ios:
+      enable: false
+      image_path: "assets/icon/logo.png"
+      remove_alpha: true
